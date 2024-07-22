@@ -1,0 +1,117 @@
+* {
+  font-family: "Roboto";
+  font-weight: 400;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(/assets/fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "Roboto-bold";
+  src: url(/assets/fonts/Roboto-Bold.ttf);
+}
+body {
+  background-color: hsl(234, 29%, 20%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  width: 900px;
+  max-width: 1000px;
+  padding: 25px;
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255);
+}
+.wrapper main {
+  padding: min(50px, 2vw);
+  width: 60%;
+}
+.wrapper main article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+.wrapper main article h1 {
+  font-family: "Roboto-bold";
+  font-size: 3.6rem;
+  font-weight: 700;
+}
+.wrapper main article p {
+  margin-bottom: 7px;
+}
+.wrapper main article div {
+  width: 100%;
+}
+.wrapper main article div:not(:last-child) {
+  margin-bottom: 8px;
+}
+.wrapper main article div div {
+  display: flex;
+  align-items: center;
+}
+.wrapper main article div div p {
+  display: inline;
+  margin-left: 11px;
+}
+.wrapper main article form label {
+  display: block;
+  margin-bottom: 6px;
+}
+.wrapper main article form input[type=email] {
+  width: 100%;
+  padding: 16px;
+  border-radius: 9px;
+  margin-bottom: 19px;
+}
+.wrapper main article form button {
+  width: 100%;
+  padding: 16px 10px;
+  border-radius: 9px;
+}
+.wrapper > div {
+  width: 40%;
+}
+.wrapper > div svg {
+  width: 100%;
+  height: auto;
+}
+
+.success {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(234, 29%, 20%);
+}
+.success .success-box {
+  text-align: center;
+  width: 400px;
+  height: 400px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 25px;
+  padding: 40px;
+}
+.success .success-box:first-child {
+  margin-bottom: 40px;
+}
+.success .success-box h1 {
+  font-family: "Roboto-bold";
+  font-size: 2.4rem;
+}
+.success .success-box button {
+  width: 100%;
+  padding: 16px 10px;
+  border-radius: 9px;
+}/*# sourceMappingURL=style.css.map */
