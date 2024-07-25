@@ -5,6 +5,25 @@
     box-sizing: border-box
 }
 
+#emailValue{
+    font-family: 'Roboto-bold';
+}
+
+.errorText{
+    color: red;
+}
+
+.errorInput{
+    color:hsl(4, 100%, 50%);
+    background-color: hsl(4, 100%, 88%);
+    border-color: red !important;
+}
+
+
+.hidden{
+    display: none  !important;
+}
+
 @import "fonts";
 
 @import "body";
@@ -12,3 +31,7 @@
 @import "wrapper";
 
 @import "succesPopup";
+
+
+@import "media";
+
