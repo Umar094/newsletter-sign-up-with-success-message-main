@@ -25,11 +25,11 @@
 
 @font-face {
   font-family: "Roboto";
-  src: url(/assets/fonts/Roboto-Regular.ttf);
+  src: url(./assets/fonts/Roboto-Regular.ttf);
 }
 @font-face {
   font-family: "Roboto-bold";
-  src: url(/assets/fonts/Roboto-Bold.ttf);
+  src: url(./assets/fonts/Roboto-Bold.ttf);
 }
 body {
   background-color: hsl(234, 29%, 20%);
@@ -89,7 +89,7 @@ body {
   display: inline;
   margin-bottom: 6px;
 }
-.wrapper .main .wrapper_text-box form input[type=email] {
+.wrapper .main .wrapper_text-box form input[type=text] {
   cursor: pointer;
   width: 100%;
   padding: 16px;
@@ -98,7 +98,7 @@ body {
   outline: none;
   border: 1px solid hsl(231, 7%, 60%);
 }
-.wrapper .main .wrapper_text-box form input[type=email]:hover {
+.wrapper .main .wrapper_text-box form input[type=text]:hover {
   border: 1px solid hsl(0, 0%, 0%);
 }
 .wrapper .main .wrapper_text-box form button {
@@ -222,7 +222,6 @@ body {
   }
   .wrapper .wrapper_image-box {
     width: 100%;
-    height: auto;
   }
   .wrapper .wrapper_image-box .desctop-image {
     display: none;
@@ -233,6 +232,10 @@ body {
     display: block;
   }
   .success .success-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100%;
     border-radius: 0px;
